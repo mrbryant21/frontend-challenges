@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body
+{
+  background-color: #E6E9FB;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif !important;
+}
+
+
+.news-card
+{
+  padding: 32px;
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.news-card h1{
+  margin-bottom: 20px;
+}
+.news-card p{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-field-and-button
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+}
+
+.checkbox-field
+{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.checkbox-field p
+{
+  font-size: 12px;
+}
+
+.subscribe-part
+{
+  display: flex;
+  justify-content: space-between  !important;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (max-width:600px)
+{
+  .subscribe-part
+  {
+    flex-direction: column;
+  }
+}
+.subscribe-part input
+{
+  padding: 12px;
+  border-radius: 5px;
+  background: #e6e9fb90;
+  border: 1px solid rgba(0, 0, 0, 0.314);
+  width: 80%;
+}
+
+.subscribe-button
+{
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.subscribe-button:hover{
+  background-color: orange;
+}
+
+#valid-mail-message, #submission-message
+{
+ display: none;
+  font-size: 12px;
+}
+
+
